@@ -1,0 +1,190 @@
+/* NavBar */
+
+body {
+	background: url(m4vgear.png) no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+header.banner.open {
+	width: 300px !important;
+}
+
+header.banner.open .menu-main-menu-container {
+	display: block;
+}
+
+header.banner {
+	position: fixed;
+	background: rgba(0, 0, 0, 0.95);
+	box-shadow: 4px 0px 30px #666;
+	width: 55px;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 3;
+	transition: ease width 0.4s;
+}
+
+header.banner .container {
+	padding: 0;
+}
+
+header.banner ul#menu-main-menu {
+	display: block;
+	margin-top: 1.5rem;
+}
+
+header.banner ul#menu-main-menu .menu-item-has-children, header.banner ul#menu-main-menu .menu-item-23106 {
+	height: 60px;
+	width: 50px;
+}
+
+header.banner ul#menu-main-menu .menu-item-has-children ul.sub-menu, header.banner ul#menu-main-menu .menu-item-23106 ul.sub-menu {
+	display: none;
+	position: relative;
+	list-style: none;
+	padding: .5rem 0;
+	width: 15rem;
+	right: -3rem;
+	top: -3rem;
+	transition: ease all 0.4s;
+}
+
+header.banner ul#menu-main-menu .menu-item-has-children ul.sub-menu li, header.banner ul#menu-main-menu .menu-item-23106 ul.sub-menu li {
+	padding: .5rem;
+}
+
+header.banner ul#menu-main-menu .menu-item-has-children ul.sub-menu li a, header.banner ul#menu-main-menu .menu-item-23106 ul.sub-menu li a {
+	color: #fff;
+	padding: .5rem;
+}
+
+header.banner ul#menu-main-menu .menu-item-has-children:hover ul.sub-menu, header.banner ul#menu-main-menu .menu-item-23106:hover ul.sub-menu {
+	display: block;
+}
+
+header.banner li a {
+	padding: 1rem .75rem;
+}
+
+header.banner li a .fa {
+	color: #fff;
+	font-size: 1.5rem !important;
+}
+
+/* Body Class Animation */
+
+.to-right {
+	position: relative;
+	right: -300px;
+	overflow: hidden;
+	transition: ease all 0.4s;
+}
+
+/* Icons */
+
+#menu-item-23115, #menu-item-23116, #menu-item-23117, #menu-item-23118, #menu-item-23119 {
+	background: #e5e500;
+}
+
+/* Labels */
+
+#menu-item-23115 a .nav-label, #menu-item-23116 a .nav-label, #menu-item-23117 a .nav-label, #menu-item-23118 a .nav-label, #menu-item-23119 a .nav-label {
+	color: #fff;
+}
+
+#menu-item-23115 a:hover, #menu-item-23116 a:hover, #menu-item-23117 a:hover, #menu-item-23118 a:hover, #menu-item-23119 a:hover {
+	text-decoration: none;
+}
+
+/* Top Phone Number Label */
+
+.open #menu-item-23106 ul.sub-menu {
+	display: block !important;
+}
+
+/* Mobile Menu Button */
+
+.menu-btn {
+	position: fixed;
+	display: none;
+	height: 30px;
+	width: 40px;
+	top: 10px;
+	left: 1rem;
+	float: left;
+	z-index: 4;
+}
+
+.menu-btn #one {
+	border-top: 2px solid #e5e500;
+	position: absolute;
+	width: 35px;
+	top: 7px;
+	left: 3px;
+	margin-bottom: .5rem;
+}
+
+.menu-btn #two {
+	border-top: 2px solid #e5e500;
+	position: absolute;
+	width: 35px;
+	top: 14px;
+	left: 3px;
+	margin-bottom: .5rem;
+}
+
+.menu-btn #three {
+	border-top: 2px solid #e5e500;
+	position: absolute;
+	width: 35px;
+	top: 21px;
+	left: 3px;
+	margin-bottom: .5rem;
+}
+
+.blue-menu {
+	background: rgba(0, 32, 66, 0.8);
+	border-radius: 5px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1025px) {
+
+	header.banner {
+		width: 0;
+	}
+
+	header.banner .menu-main-menu-container {
+		display: none;
+	}
+
+	.menu-btn {
+		display: block;
+	}
+
+	.btn-right {
+		left: 20rem !important;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+	header.banner.open {
+		width: 250px !important;
+	}
+
+	header.banner.open ul#menu-main-menu .menu-item-has-children ul.sub-menu, header.banner.open ul#menu-main-menu #menu-item-23106 ul.sub-menu {
+		width: 12.65rem !important;
+	}
+
+	body.to-right {
+		right: -250px !important;
+	}
+
+	.btn-right {
+		left: 17rem !important;
+	}
+}
